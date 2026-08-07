@@ -9,7 +9,7 @@
 </head>
 <body class="bg-slate-50 font-sans text-slate-800">
 
-    <!-- Header & Navigasi -->
+    <!-- Header & Navigasi dengan Menu yang Diperbarui -->
     <header class="bg-emerald-700 text-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
@@ -19,10 +19,13 @@
                     <p class="text-xs text-emerald-200">Unggul, Berkarakter, dan Islami</p>
                 </div>
             </div>
-            <nav class="hidden md:flex space-x-6 font-medium text-sm">
+            <nav class="hidden md:flex space-x-6 font-medium text-sm items-center">
                 <a href="#beranda" class="hover:text-emerald-200 transition">Beranda</a>
-                <a href="#artikel" class="hover:text-emerald-200 transition">Info Terkini</a>
                 <a href="#profil" class="hover:text-emerald-200 transition">Profil</a>
+                <a href="#kegiatan" class="hover:text-emerald-200 transition">Kegiatan & Ekstrakurikuler</a>
+                <a href="#ppdb" class="hover:text-emerald-200 transition">PPDB</a>
+                <a href="#artikel" class="hover:text-emerald-200 transition">Info Terkini</a>
+                <a href="#galeri" class="hover:text-emerald-200 transition">Galeri</a>
                 <a href="#kontak" class="hover:text-emerald-200 transition">Kontak</a>
             </nav>
         </div>
@@ -33,13 +36,10 @@
         <!-- Container Slider -->
         <div id="slider" class="relative w-full h-[400px] md:h-[550px]">
             
-            <!-- Slide 1: Sesuai Tema Gambar (EduQuiz / Belajar Seru) -->
+            <!-- Slide 1 -->
             <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100 flex items-center justify-center">
-                <!-- Gambar Latar Belakang Banner (Ganti path/nama file dengan gambar Anda) -->
                 <img src="path/ke/folder/gambar-banner-eduquiz.jpg" alt="EduQuiz MIM Wonoanti III" class="absolute inset-0 w-full h-full object-cover object-center" />
-                <!-- Overlay Transparan -->
                 <div class="absolute inset-0 bg-sky-950/40"></div>
-                <!-- Konten Teks & Tombol -->
                 <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
                     <span class="bg-amber-400 text-slate-900 text-xs md:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
                         Belajar Seru, Wawasan Luas!
@@ -51,23 +51,20 @@
                         Wadah kuis interaktif yang seru dan menyenangkan untuk mengasah kemampuan siswa-siswi berlandaskan nilai Islam.
                     </p>
                     <div class="flex flex-wrap justify-center gap-4">
-                        <a href="#mulai-kuis" class="bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
-                            Mulai Kuis Sekarang
+                        <a href="#ppdb" class="bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                            Daftar PPDB Sekarang
                         </a>
-                        <a href="#tentang" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold px-8 py-3.5 rounded-xl shadow transition">
+                        <a href="#profil" class="bg-white/10 hover:bg-white/25 backdrop-blur-md text-white border border-white/30 font-semibold px-8 py-3.5 rounded-xl shadow transition">
                             Pelajari Lebih Lanjut
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Slide 2: Contoh Slide Tambahan -->
+            <!-- Slide 2 -->
             <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
-                <!-- Gambar Latar Belakang Slide 2 -->
                 <img src="path/ke/folder/gambar-kegiatan-2.jpg" alt="Kegiatan Madrasah" class="absolute inset-0 w-full h-full object-cover object-center" />
-                <!-- Overlay Transparan Slide 2 -->
                 <div class="absolute inset-0 bg-emerald-950/50"></div>
-                <!-- Konten Teks Slide 2 -->
                 <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
                     <span class="bg-amber-400 text-slate-900 text-xs md:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
                         Prestasi & Kreativitas
@@ -84,13 +81,13 @@
                 </div>
             </div>
 
-            <!-- Slide 3: Contoh Slide Informasi Kegiatan / PPDB -->
+            <!-- Slide 3 -->
             <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center bg-gradient-to-r from-teal-800 to-emerald-800">
                 <div class="relative z-10 text-center px-6 max-w-3xl">
                     <span class="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase">Pendaftaran Siswa Baru</span>
                     <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Penerimaan Peserta Didik Baru (PPDB)</h2>
                     <p class="text-base md:text-xl text-emerald-100 mb-6">Telah dibuka tahun ajaran baru. Mari bergabung bersama madrasah unggulan kami.</p>
-                    <a href="#kontak" class="bg-white hover:bg-slate-100 text-emerald-900 font-semibold px-6 py-3 rounded-lg shadow transition">Daftar Sekarang</a>
+                    <a href="#kontak" class="bg-white hover:bg-slate-100 text-emerald-900 font-semibold px-6 py-3 rounded-lg shadow transition">Hubungi Panitia</a>
                 </div>
             </div>
 
@@ -105,10 +102,116 @@
         </button>
     </section>
 
+    <!-- Bagian Profil Singkat & Ekstrakurikuler -->
+    <section id="profil" class="py-16 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Profil & Tentang Madrasah</h3>
+                <div class="w-16 h-1 bg-emerald-600 mx-auto mt-2"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Kotak Kiri: Pendidikan Berkualitas -->
+                <div class="bg-emerald-700 text-white p-8 rounded-xl shadow-md flex flex-col justify-center items-center text-center">
+                    <span class="text-5xl mb-4">📚</span>
+                    <h4 class="text-xl font-bold">Pendidikan Berkualitas</h4>
+                    <p class="text-emerald-100 mt-2 text-sm leading-relaxed">Didukung oleh tenaga pendidik profesional yang berdedikasi tinggi dalam membimbing siswa-siswi mencapai prestasi terbaik.</p>
+                </div>
+
+                <!-- Kotak Kanan: Sambutan / Profil Singkat Kepala Madrasah -->
+                <div class="bg-emerald-700 text-white p-8 rounded-xl shadow-md flex flex-col justify-center">
+                    <div class="text-center mb-4">
+                        <span class="text-4xl">🌟</span>
+                        <h4 class="text-xl font-bold mt-2">Sambutan Kepala Madrasah</h4>
+                    </div>
+                    <p class="text-emerald-100 text-sm leading-relaxed text-justify">
+                        "Selamat datang di website resmi MIM Wonoanti III. Kami berkomitmen untuk memberikan pendidikan dasar Islam yang memadukan kecerdasan intelektual, keterampilan, serta pembentukan karakter akhlakul karimah bagi peserta didik."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bagian Visi & Misi -->
+            <div class="mt-8 bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h4 class="text-xl font-semibold text-emerald-700 mb-2">Visi Kami</h4>
+                    <p class="text-slate-600 mb-6 italic">"Terwujudnya peserta didik yang religius, cerdas, terampil, dan berwawasan lingkungan."</p>
+                    
+                    <h4 class="text-xl font-semibold text-emerald-700 mb-3">Misi Kami</h4>
+                    <ul class="list-disc text-left inline-block text-slate-600 space-y-2">
+                        <li>Menanamkan nilai-nilai keislaman dalam kegiatan sehari-hari.</li>
+                        <li>Melaksanakan pembelajaran yang aktif, kreatif, dan menyenangkan.</li>
+                        <li>Mengembangkan potensi akademik dan non-akademik siswa.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kegiatan & Ekstrakurikuler -->
+    <section id="kegiatan" class="py-16 container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Kegiatan & Ekstrakurikuler</h3>
+            <div class="w-16 h-1 bg-emerald-600 mx-auto mt-2"></div>
+            <p class="text-slate-600 mt-2 text-sm">wadah pengembangan minat, bakat, dan karakter siswa.</p>
+        </div>
+
+        <div class="max-w-2xl mx-auto bg-emerald-700 text-white p-8 rounded-xl shadow-md">
+            <div class="text-center mb-6">
+                <span class="text-4xl">🏆</span>
+                <h4 class="text-xl font-bold mt-2">Pilihan Ekstrakurikuler Madrasah</h4>
+                <p class="text-emerald-100 text-xs mt-1">Silakan klik menu kegiatan di bawah untuk melihat informasi lengkap:</p>
+            </div>
+            <ul class="space-y-2 text-sm">
+                <li>
+                    <a href="#pramuka" class="bg-emerald-800/60 hover:bg-emerald-800 px-4 py-3 rounded-lg flex items-center justify-between transition">
+                        <span class="flex items-center gap-2">✔ Pramuka (Kepanduan Hizbul Wathan)</span>
+                        <span class="text-xs text-emerald-200 underline">Lihat &rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tapaksuci" class="bg-emerald-800/60 hover:bg-emerald-800 px-4 py-3 rounded-lg flex items-center justify-between transition">
+                        <span class="flex items-center gap-2">✔ Tapak Suci Putera Muhammadiyah</span>
+                        <span class="text-xs text-emerald-200 underline">Lihat &rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tahfidz" class="bg-emerald-800/60 hover:bg-emerald-800 px-4 py-3 rounded-lg flex items-center justify-between transition">
+                        <span class="flex items-center gap-2">✔ Tahfidzul Qur'an & Seni Baca Al-Qur'an</span>
+                        <span class="text-xs text-emerald-200 underline">Lihat &rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#olahraga" class="bg-emerald-800/60 hover:bg-emerald-800 px-4 py-3 rounded-lg flex items-center justify-between transition">
+                        <span class="flex items-center gap-2">✔ Olahraga (Bulutangkis & Tenis Meja)</span>
+                        <span class="text-xs text-emerald-200 underline">Lihat &rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seni" class="bg-emerald-800/60 hover:bg-emerald-800 px-4 py-3 rounded-lg flex items-center justify-between transition">
+                        <span class="flex items-center gap-2">✔ Seni Tari & Drumband Madrasah</span>
+                        <span class="text-xs text-emerald-200 underline">Lihat &rarr;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Bagian PPDB (Penerimaan Peserta Didik Baru) -->
+    <section id="ppdb" class="py-16 bg-emerald-50 border-y border-emerald-100">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+            <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Tahun Ajaran Baru</span>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mt-3 mb-4">Pendaftaran Peserta Didik Baru (PPDB)</h3>
+            <p class="text-slate-600 mb-6">Membuka pendaftaran siswa/siswi baru kelas 1 Madrasah Ibtidaiyah. Dapatkan fasilitas belajar terbaik, lingkungan islami, serta potongan khusus bagi pendaftar gelombang pertama.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#kontak" class="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-6 py-3 rounded-xl shadow transition">Formulir & Syarat Pendaftaran</a>
+            </div>
+        </div>
+    </section>
+
     <!-- BAGIAN ARTIKEL & INFO TERKINI -->
     <section id="artikel" class="py-16 container mx-auto px-6">
         <div class="text-center mb-12">
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Berita & Informasi Terkini</h3>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Info Terkini & Berita</h3>
             <div class="w-16 h-1 bg-emerald-600 mx-auto mt-2"></div>
             <p class="text-slate-600 mt-2 text-sm">Update kegiatan terbaru seputar madrasah.</p>
         </div>
@@ -158,62 +261,27 @@
         </div>
     </section>
 
-    <!-- Bagian Profil Singkat & Ekstrakurikuler -->
-    <section id="profil" class="py-16 bg-slate-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Tentang Madrasah</h3>
-                <div class="w-16 h-1 bg-emerald-600 mx-auto mt-2"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 items-stretch">
-                <!-- Kotak Kiri: Pendidikan Berkualitas -->
-                <div class="bg-emerald-700 text-white p-8 rounded-xl shadow-md flex flex-col justify-center items-center text-center">
-                    <span class="text-5xl mb-4">📚</span>
-                    <h4 class="text-xl font-bold">Pendidikan Berkualitas</h4>
-                    <p class="text-emerald-100 mt-2 text-sm leading-relaxed">Didukung oleh tenaga pendidik profesional yang berdedikasi tinggi dalam membimbing siswa-siswi mencapai prestasi terbaik.</p>
-                </div>
-
-                <!-- Kotak Kanan: Kegiatan Ekstrakurikuler (Gaya Senada dengan Kotak Hijau) -->
-                <div class="bg-emerald-700 text-white p-8 rounded-xl shadow-md flex flex-col justify-center">
-                    <div class="text-center mb-4">
-                        <span class="text-4xl">🏆</span>
-                        <h4 class="text-xl font-bold mt-2">Kegiatan Ekstrakurikuler</h4>
-                        <p class="text-emerald-100 text-xs mt-1">Mengembangkan bakat, minat, dan potensi siswa melalui berbagai kegiatan pilihan:</p>
-                    </div>
-                    <ul class="space-y-2 text-sm">
-                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Pramuka (Kepanduan Hizbul Wathan)</li>
-                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Tapak Suci Putera Muhammadiyah</li>
-                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Tahfidzul Qur'an & Seni Baca Al-Qur'an</li>
-                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Olahraga (Bulutangkis & Tenis Meja)</li>
-                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Seni Tari & Drumband Madrasah</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Bagian Visi & Misi (Dipindah ke bawah agar rapi) -->
-            <div class="mt-8 bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h4 class="text-xl font-semibold text-emerald-700 mb-2">Visi Kami</h4>
-                    <p class="text-slate-600 mb-6 italic">"Terwujudnya peserta didik yang religius, cerdas, terampil, dan berwawasan lingkungan."</p>
-                    
-                    <h4 class="text-xl font-semibold text-emerald-700 mb-3">Misi Kami</h4>
-                    <ul class="list-disc text-left inline-block text-slate-600 space-y-2">
-                        <li>Menanamkan nilai-nilai keislaman dalam kegiatan sehari-hari.</li>
-                        <li>Melaksanakan pembelajaran yang aktif, kreatif, dan menyenangkan.</li>
-                        <li>Mengembangkan potensi akademik dan non-akademik siswa.</li>
-                    </ul>
-                </div>
+    <!-- Bagian Galeri Foto -->
+    <section id="galeri" class="py-16 bg-slate-100">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">Galeri Foto</h3>
+            <div class="w-16 h-1 bg-emerald-600 mx-auto mt-2 mb-8"></div>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="bg-emerald-200 h-48 rounded-xl flex items-center justify-center text-emerald-800 font-semibold shadow-sm">Dokumentasi 1</div>
+                <div class="bg-emerald-200 h-48 rounded-xl flex items-center justify-center text-emerald-800 font-semibold shadow-sm">Dokumentasi 2</div>
+                <div class="bg-emerald-200 h-48 rounded-xl flex items-center justify-center text-emerald-800 font-semibold shadow-sm">Dokumentasi 3</div>
+                <div class="bg-emerald-200 h-48 rounded-xl flex items-center justify-center text-emerald-800 font-semibold shadow-sm">Dokumentasi 4</div>
             </div>
         </div>
     </section>
 
     <!-- Bagian Kontak -->
     <section id="kontak" class="py-16 container mx-auto px-6 text-center">
-        <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Hubungi Kami</h3>
-        <p class="text-slate-600 mb-6">Ingin mendaftarkan putra-putri Anda atau ingin tahu informasi lebih lanjut?</p>
-        <div class="inline-block bg-white px-6 py-4 rounded-xl shadow-sm border border-slate-200 text-left">
-            <p class="text-slate-700 mb-2">📍 <strong>Lokasi:</strong> Wonoanti, Kecamatan..., Kabupaten...</p>
+        <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Kontak & Lokasi</h3>
+        <p class="text-slate-600 mb-6">Ingin mendaftarkan putra-putri Anda atau ingin tahu informasi lebih lanjut? Silakan hubungi kami melalui kontak di bawah ini.</p>
+        <div class="inline-block bg-white px-8 py-6 rounded-xl shadow-sm border border-slate-200 text-left">
+            <p class="text-slate-700 mb-3">📍 <strong>Lokasi:</strong> Wonoanti, Kecamatan..., Kabupaten...</p>
+            <p class="text-slate-700 mb-3">📞 <strong>Telepon/WhatsApp:</strong> 08xx-xxxx-xxxx</p>
             <p class="text-slate-700">📧 <strong>Email:</strong> info@mimwonoanti3.sch.id</p>
         </div>
     </section>
