@@ -158,28 +158,51 @@
         </div>
     </section>
 
-    <!-- Bagian Profil Singkat -->
+    <!-- Bagian Profil Singkat & Ekstrakurikuler -->
     <section id="profil" class="py-16 bg-slate-100">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Tentang Madrasah</h3>
                 <div class="w-16 h-1 bg-emerald-600 mx-auto mt-2"></div>
             </div>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                    <h4 class="text-xl font-semibold text-emerald-700 mb-3">Visi Kami</h4>
-                    <p class="text-slate-600 mb-6">"Terwujudnya peserta didik yang religius, cerdas, terampil, dan berwawasan lingkungan."</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Kotak Kiri: Pendidikan Berkualitas -->
+                <div class="bg-emerald-700 text-white p-8 rounded-xl shadow-md flex flex-col justify-center items-center text-center">
+                    <span class="text-5xl mb-4">📚</span>
+                    <h4 class="text-xl font-bold">Pendidikan Berkualitas</h4>
+                    <p class="text-emerald-100 mt-2 text-sm leading-relaxed">Didukung oleh tenaga pendidik profesional yang berdedikasi tinggi dalam membimbing siswa-siswi mencapai prestasi terbaik.</p>
+                </div>
+
+                <!-- Kotak Kanan: Kegiatan Ekstrakurikuler (Gaya Senada dengan Kotak Hijau) -->
+                <div class="bg-emerald-700 text-white p-8 rounded-xl shadow-md flex flex-col justify-center">
+                    <div class="text-center mb-4">
+                        <span class="text-4xl">🏆</span>
+                        <h4 class="text-xl font-bold mt-2">Kegiatan Ekstrakurikuler</h4>
+                        <p class="text-emerald-100 text-xs mt-1">Mengembangkan bakat, minat, dan potensi siswa melalui berbagai kegiatan pilihan:</p>
+                    </div>
+                    <ul class="space-y-2 text-sm">
+                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Pramuka (Kepanduan Hizbul Wathan)</li>
+                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Tapak Suci Putera Muhammadiyah</li>
+                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Tahfidzul Qur'an & Seni Baca Al-Qur'an</li>
+                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Olahraga (Bulutangkis & Tenis Meja)</li>
+                        <li class="bg-emerald-800/60 px-3 py-2 rounded-lg flex items-center gap-2">✔ Seni Tari & Drumband Madrasah</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bagian Visi & Misi (Dipindah ke bawah agar rapi) -->
+            <div class="mt-8 bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h4 class="text-xl font-semibold text-emerald-700 mb-2">Visi Kami</h4>
+                    <p class="text-slate-600 mb-6 italic">"Terwujudnya peserta didik yang religius, cerdas, terampil, dan berwawasan lingkungan."</p>
+                    
                     <h4 class="text-xl font-semibold text-emerald-700 mb-3">Misi Kami</h4>
-                    <ul class="list-disc list-inside text-slate-600 space-y-2">
+                    <ul class="list-disc text-left inline-block text-slate-600 space-y-2">
                         <li>Menanamkan nilai-nilai keislaman dalam kegiatan sehari-hari.</li>
                         <li>Melaksanakan pembelajaran yang aktif, kreatif, dan menyenangkan.</li>
                         <li>Mengembangkan potensi akademik dan non-akademik siswa.</li>
                     </ul>
-                </div>
-                <div class="bg-emerald-700 text-white p-8 rounded-xl shadow-md text-center">
-                    <span class="text-5xl">📚</span>
-                    <h4 class="text-xl font-bold mt-4">Pendidikan Berkualitas</h4>
-                    <p class="text-emerald-100 mt-2 text-sm">Didukung oleh tenaga pendidik profesional yang berdedikasi tinggi dalam membimbing siswa-siswi mencapai prestasi terbaik.</p>
                 </div>
             </div>
         </div>
